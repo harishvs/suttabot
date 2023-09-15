@@ -33,4 +33,10 @@ cd ..
 ### upgrade pip
 `python -m pip install --upgrade pip`
 
+## To load data 
+`python load_files.py`
+
+## To run inference
+`python query_llm.py`
+
 

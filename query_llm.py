@@ -46,6 +46,7 @@ def load_llm():
 if __name__ == '__main__':
     # ask the AI chat about information in our local files
     model = load_llm()
-    prompt = "what is the meaning of sampajanna?"
+    # prompt = "what is the meaning of sampajanna?"
+    prompt = "what is Ekāyano ayaṁ, bhikkhave, maggo sattānaṁ visuddhiyā?"
     output = model({'query': prompt})
     print(output["result"])
