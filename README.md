@@ -1,4 +1,5 @@
-# Very rough beginnings of a bot which can answer questions based on Suttas:  
+# Very rough beginnings of a bot which can answer questions based on Suttas:
+TODO: work on a chatbot
 
 ## To set up a development env follow these steps
 
@@ -36,7 +37,7 @@ cd ..
 ## To load data 
 `python load_files.py`
 
-## To run inference
-`python query_llm.py`
+## To get answers based on the pdf in your data dir
+`python question_answer_on_source.py`
 
 
