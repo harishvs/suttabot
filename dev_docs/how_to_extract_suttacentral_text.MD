@@ -1,0 +1,5 @@
+I’ve also been tinkering with this stuff too - which model are you thinking of using - Falcon? At the moment I think any Llama based model has specific licensing for research purposes only - it’s worth checking the licensing for any model you end up using. If you want to maybe craft your training/fine tuning against questions then answers, I’ve gone some way to identify who is speaking in the suttas, so use this if you like!: suttamap/data/speakers/sutta at main · michaelh-sc/suttamap · GitHub
+
+There’s many methods to ingest the suttas into plain text, the way I do this is take some text input and perform a wildcard search with that of filenames inside the /translation folder of https://github.com/suttacentral/bilara-data 1 but there is also formatting inside https://github.com/suttacentral/bilara-data/tree/published/html/pli/ms/sutta 2 if you want to replicate some of the formatting on SC such as paragraphs.
+
+There is some API documentation in this thread . Here is some python just for getting the suttas in text format, without chapter headings and without paragraphs and other line formatting:

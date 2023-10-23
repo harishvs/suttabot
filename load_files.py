@@ -10,8 +10,8 @@ from langchain.vectorstores import FAISS
 
 def load():
     # define what documents to load
-    # loader = DirectoryLoader("./", glob="*.txt", loader_cls=TextLoader)
-    loader = PyPDFLoader("data/Satipatthana.pdf")
+    loader = DirectoryLoader("./", glob="data/sutta/*.txt", loader_cls=TextLoader)
+    # loader = PyPDFLoader("data/Satipatthana.pdf")
     # interpret information in the documents
     documents = loader.load()
     splitter = RecursiveCharacterTextSplitter(chunk_size=500,

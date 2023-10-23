@@ -46,7 +46,9 @@ def load_llm():
 if __name__ == '__main__':
     # ask the AI chat about information in our local files
     model = load_llm()
-    # prompt = "what is the meaning of sampajanna?"
-    prompt = "what is Ekāyano ayaṁ, bhikkhave, maggo sattānaṁ visuddhiyā?"
+    prompt = "can you summarize vinaya for me"
+    # prompt = "what is Ekāyano ayaṁ, bhikkhave, maggo sattānaṁ visuddhiyā?"
+    # prompt = "Who is the author of FftSharp? What is their favorite color?"
+    # prompt = "Why is JupyterGoBoom obsolete?"
     output = model({'query': prompt})
     print(output["result"])

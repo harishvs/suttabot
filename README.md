@@ -40,4 +40,9 @@ cd ..
 ## To get answers based on the pdf in your data dir
 `python question_answer_on_source.py`
 
+Ref: 
+https://swharden.com/blog/2023-07-30-ai-document-qa/
+https://python.langchain.com/docs/use_cases/question_answering/
+
+
 
